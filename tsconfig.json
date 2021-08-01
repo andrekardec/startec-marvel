@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "noEmit": false,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "checkJs": true,
+    "baseUrl": "./src",
+    "types": ["@types/jest", "@types/node"],
+    "typeRoots": [
+      "@types"
+    ],   
+    "paths": {
+      "@config/*": ["./config/*"],
+      "@adapters/*": ["./adapters/*"],
+      "@domain/*": ["./domain/*"],
+      "@presentation/*": ["./presentation/*"]
+    }
+  },
+  "include": [
+    "./src",
+  ],
+  "exclude": [
+    "assets",
+    "node_modules",
+    "build",
+    "webpack.config.js",
+    "jest.config.js"
+  ],
+  "files": [
+    "./src/presentation/styles/themes/styled-components.d.ts"
+  ]
+}
