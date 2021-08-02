@@ -5,6 +5,7 @@ export type IHttpRequest = {
     method: IHttpMethod;
     data?: any;
     headers?: any;
+    params?: string;
 };
 
 export interface IHttpClient<Response = any> {
@@ -22,7 +23,7 @@ export enum IHttpStatusCode {
     serverError = 500,
 }
 
-export type IHttpResponse<Type = any> = {
-    data: Type;
+export type IHttpResponse<R = any> = {
+    data?: R;
     status: number;
 };

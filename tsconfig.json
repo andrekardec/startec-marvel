@@ -34,7 +34,7 @@
     }
   },
   "include": [
-    "./src",
+    "./src"
   ],
   "exclude": [
     "assets",
@@ -42,8 +42,5 @@
     "build",
     "webpack.config.js",
     "jest.config.js"
-  ],
-  "files": [
-    "./src/presentation/styles/themes/styled-components.d.ts"
   ]
 }
