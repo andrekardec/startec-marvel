@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {EmojiSmileUpsideDown} from 'styled-icons/bootstrap';
 
 export const Container = styled.div`
     display: flex;
@@ -82,4 +83,13 @@ export const ThanksBox = styled.div`
         transform: rotate(90deg);
         margin-top: 0.25em;
     }
+`;
+
+export const HappyIcon = styled(EmojiSmileUpsideDown)`
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
 `;
