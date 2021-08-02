@@ -15,10 +15,10 @@ export const LightIcon = styled(Sun)`
     width: 28px;
     height: 28px;
     margin-right: 6px;
-    color: ${props =>
-        props.theme.title === 'dark'
-            ? props.theme.colors.background
-            : props.theme.colors.white};
+    color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.background
+      : props.theme.colors.white)};
 `;
 
 export const DarkIcon = styled(Nightlight)`
@@ -26,8 +26,8 @@ export const DarkIcon = styled(Nightlight)`
     width: 28px;
     height: 28px;
     margin-left: 6px;
-    ${props =>
-        props.theme.title === 'dark'
-            ? props.theme.colors.background
-            : props.theme.colors.white};
+    ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.background
+      : props.theme.colors.white)};
 `;

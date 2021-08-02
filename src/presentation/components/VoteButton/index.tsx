@@ -5,13 +5,11 @@ export interface Background {
     image: string;
   }
 
-const VoteButton: React.FC = () => {
-    
-    return (
-        <Button>
-            <Icon />
-        </Button>
-    )
-};
+const VoteButton: React.FC = () =>
+  (
+    <Button>
+      <Icon />
+    </Button>
+  );
 
 export default VoteButton;

@@ -1,4 +1,4 @@
-declare interface ICreator{
+export interface ICreator{
   name: string;
   role: string;
 }

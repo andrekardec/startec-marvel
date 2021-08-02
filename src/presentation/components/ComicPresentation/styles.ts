@@ -1,12 +1,13 @@
-import styled from "styled-components";
-import { Background } from ".";
+/* eslint-disable implicit-arrow-linebreak */
+import styled from 'styled-components';
+import { Background } from '.';
 
 export const Container = styled.div<Background>`
     grid-area: CMA;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(${bg => bg.image}) no-repeat top center;
+    background: url(${(bg) => bg.image}) no-repeat top center;;
     background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.94);
 `;
@@ -29,7 +30,8 @@ export const InfoWrapper = styled.div`
     justify-content: space-between;
     width: 60%;
     height: 400px;
-    color: ${props => props.theme.colors.textGray};
+    color: ${(props) =>
+    props.theme.colors.textGray};
 `;
 
 export const TitleWrapper = styled.div`
@@ -50,24 +52,17 @@ export const Title = styled.h1`
     align-items: flex-start;
     justify-content: flex-start;
     font-size: 32px;
-    color: ${props => props.theme.colors.textGray};
+    color: ${(props) =>
+    props.theme.colors.textGray};
 `;
 
-export const DescriptionWrapper = styled.div`
-    display: flex;
-    width: 80%;
-    > p{
-        line-height: 22px;
-    }
-`;
-
-export const Published = styled.div `
+export const Published = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10px 0 10px 0;
 `;
 
-export const Creator = styled.div `
+export const Creator = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10px 0 10px 0;

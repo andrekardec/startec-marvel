@@ -5,6 +5,7 @@ import marvelCredentials from '@config/Marvel';
 
 export class AxiosHttpClient implements IHttpClient {
   private baseUrl = marvelCredentials.baseUrl;
+
   private authorizationHash = marvelCredentials.authorizationHash;
 
   private marvelParams : string | undefined = undefined;
@@ -18,7 +19,6 @@ export class AxiosHttpClient implements IHttpClient {
     }
 
     if (options.data) {
-
       try {
         axiosResponse = await axios.request({
           url: `${options.url}`,
@@ -29,7 +29,7 @@ export class AxiosHttpClient implements IHttpClient {
       } catch (error) {
         axiosResponse = error.response;
       }
-    return axiosResponse;
+      return axiosResponse;
     }
 
     try {

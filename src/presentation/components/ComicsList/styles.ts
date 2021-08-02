@@ -26,7 +26,8 @@ export const ComicCarousel = styled.div`
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: ${props => props.theme.colors.primary};
+        background-color: ${(props) =>
+    props.theme.colors.primary};
         border-radius: 4px;
         height: 6px;
     }

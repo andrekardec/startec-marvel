@@ -1,4 +1,4 @@
-declare interface NotFound {
+export interface NotFound {
   code: number;
   error: string;
 }

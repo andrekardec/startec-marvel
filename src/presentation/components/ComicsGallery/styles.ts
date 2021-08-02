@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
     grid-area: CG;
@@ -6,7 +6,8 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.theme.colors.white};
+    background-color: ${(props) =>
+    props.theme.colors.white};
     position: relative;
 `;
 
@@ -15,7 +16,8 @@ export const Box = styled.div`
     grid-gap: 16px;
     height: auto;
     align-items: center;
-    background-color: ${props => props.theme.colors.white};
+    background-color: ${(props) =>
+    props.theme.colors.white};
 
     > a div div img {
       max-width: 170px;
@@ -29,7 +31,8 @@ export const Box = styled.div`
     }
     > h5 {
       font-size: 16px;
-      color: ${props => props.theme.colors.offgray};
+      color: ${(props) =>
+    props.theme.colors.offgray};
       background-color: red;
     }
 `;

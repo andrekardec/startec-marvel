@@ -15,21 +15,24 @@ export const DevelopedBy = styled.div`
 
     > h5 {
         font-size: 14px;
-        color: ${props => props.theme.colors.white};
+        color: ${(props) =>
+    props.theme.colors.white};
         text-align: center;
         font-weight: 300;
     }
 
     > h4 {
         font-size: 18px;
-        color: ${props => props.theme.colors.white};
+        color: ${(props) =>
+    props.theme.colors.white};
         text-align: center;
         font-weight: 200;
     }
 
     > p {
         font-size: 12px;
-        color: ${props => props.theme.colors.white};
+        color: ${(props) =>
+    props.theme.colors.white};
         text-align: center;
         font-weight: 200;
     }

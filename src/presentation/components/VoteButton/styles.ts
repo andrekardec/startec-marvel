@@ -2,9 +2,11 @@ import styled from 'styled-components';
 import { Like, Dislike } from 'styled-icons/boxicons-regular';
 
 export const Button = styled.button`
-  border-color: ${props => props.theme.colors.primary};
+  border-color: ${(props) =>
+    props.theme.colors.primary};
   border-radius: 50%;
-  color: #${props => props.theme.colors.offwhite};
+  color: #${(props) =>
+    props.theme.colors.offwhite};
   position: absolute;
   top: -50px;
   left: -35px;
@@ -13,7 +15,8 @@ export const Button = styled.button`
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 
-  background-color: ${props => props.theme.colors.primary};
+  background-color: ${(props) =>
+    props.theme.colors.primary};
   cursor: pointer;
   font-weight: 600;
   font-size: large;
@@ -29,7 +32,8 @@ export const Button = styled.button`
           transform: translateX(-50%);
   width: 0;
   height: 100%;
-  background: ${props => props.theme.colors.tertiary};
+  background: ${(props) =>
+    props.theme.colors.tertiary};
   z-index: -1;
   -webkit-transition: width 150ms ease-in-out;
   transition: width 150ms ease-in-out;
@@ -47,8 +51,6 @@ export const Icon = styled(Like)`
   width: 60px;
   height: 60px;
   padding: 6px;
-  color: ${props => props.theme.colors.white};
+  color: ${(props) =>
+    props.theme.colors.white};
 `;
-
-
-

@@ -1,46 +1,45 @@
 import React from 'react';
-import {
-    Container,
-    LeftWrapper,
-    HomeButton,
-    ComicButton,
-    CharacterButton,
-    SeriesButton,
-    CenterWrapper,
-    LogoButton,
-    RightWrapper,
-    HamburgerMenu,
-} from './styles';
 import ThemeSwitcher from '@presentation/components/ThemeSwitcher';
 
 import LogoWhite from '@presentation/assets/logoWhite.svg';
 import { Link } from 'react-router-dom';
+import {
+  Container,
+  LeftWrapper,
+  HomeButton,
+  ComicButton,
+  CharacterButton,
+  SeriesButton,
+  CenterWrapper,
+  LogoButton,
+  RightWrapper,
+  HamburgerMenu,
+} from './styles';
 
-const TopBar: React.FC = () => {
-    return (
-        <Container>
-            
-            <LeftWrapper>
-            <Link to="/"><HomeButton /></Link>
-                <ComicButton />
-                <CharacterButton />
-                <SeriesButton />
-            </LeftWrapper>
+const TopBar: React.FC = () =>
+  (
+    <Container>
 
-            <CenterWrapper>
-                <Link to="/">
-                    <LogoButton>
-                        <img src={LogoWhite} alt="Marvel" width="110" height="auto" />
-                    </LogoButton>
-                </Link>
-            </CenterWrapper>
+      <LeftWrapper>
+        <Link to="/"><HomeButton /></Link>
+        <ComicButton />
+        <CharacterButton />
+        <SeriesButton />
+      </LeftWrapper>
 
-            <RightWrapper>
-                <ThemeSwitcher />
-                <HamburgerMenu />
-            </RightWrapper>
-        </Container>
-    );
-};
+      <CenterWrapper>
+        <Link to="/">
+          <LogoButton>
+            <img src={LogoWhite} alt="Marvel" width="110" height="auto" />
+          </LogoButton>
+        </Link>
+      </CenterWrapper>
+
+      <RightWrapper>
+        <ThemeSwitcher />
+        <HamburgerMenu />
+      </RightWrapper>
+    </Container>
+  );
 
 export default TopBar;

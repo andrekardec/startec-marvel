@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import Background from "../../assets/background.svg";
-
 export const Container = styled.div`
     grid-area: BT;
     display: flex;
@@ -42,27 +40,27 @@ export const TitleWrapper = styled.div`
     > h1 {
         font-size: 5vw;
         font-weight: 900;
-        background-color: ${props =>
-            props.theme.title === 'dark'
-                ? props.theme.colors.primary
-                : props.theme.colors.textColor};
-        color: ${props =>
-            props.theme.title === 'dark'
-                ? props.theme.colors.textColor
-                : props.theme.colors.offwhite};
+        background-color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.primary
+      : props.theme.colors.textColor)};
+        color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.textColor
+      : props.theme.colors.offwhite)};
         padding: 0.15em 0.5em;
     }
 
     > h1:nth-child(2) {
         position: absolute;
-        background-color: ${props =>
-            props.theme.title === 'dark'
-                ? props.theme.colors.background
-                : props.theme.colors.background};
-        color: ${props =>
-            props.theme.title === 'dark'
-                ? props.theme.colors.textColor
-                : props.theme.colors.textColor};
+        background-color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.background
+      : props.theme.colors.background)};
+        color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.textColor
+      : props.theme.colors.textColor)};
         clip-path: inset(-1% -1% 50% -1%);
     }
 `;
@@ -86,7 +84,6 @@ export const CallToAction = styled.div`
     }
 `;
 
-
 export const ComicWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -103,10 +100,10 @@ export const CounterBattle = styled.div`
     height: 80px;
     margin: 0 20px 0 20px;
     cursor: pointer;
-    color: ${props => props.theme.colors.textColor};
+    color: ${(props) =>
+    props.theme.colors.textColor};
     font-size: 70px;
     font-weight: 900;
     letter-spacing: 10px;
     
 `;
-

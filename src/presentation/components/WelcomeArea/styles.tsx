@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {EmojiSmileUpsideDown} from 'styled-icons/bootstrap';
+import { EmojiSmileUpsideDown } from 'styled-icons/bootstrap';
 
 export const Container = styled.div`
     display: flex;
@@ -20,28 +20,28 @@ export const TitleWrapper = styled.div`
     > h1 {
         font-size: 5vw;
         font-weight: 900;
-        background-color: ${props =>
-            props.theme.title === 'dark'
-                ? props.theme.colors.primary
-                : props.theme.colors.textColor};
-        color: ${props =>
-            props.theme.title === 'dark'
-                ? props.theme.colors.textColor
-                : props.theme.colors.offwhite};
+        background-color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.primary
+      : props.theme.colors.textColor)};
+        color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.textColor
+      : props.theme.colors.offwhite)};
         display: block;
         padding: 0.15em 0.5em;
     }
 
     > h1:nth-child(2) {
         position: absolute;
-        background-color: ${props =>
-            props.theme.title === 'dark'
-                ? props.theme.colors.background
-                : props.theme.colors.background};
-        color: ${props =>
-            props.theme.title === 'dark'
-                ? props.theme.colors.textColor
-                : props.theme.colors.textColor};
+        background-color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.background
+      : props.theme.colors.background)};
+        color: ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.textColor
+      : props.theme.colors.textColor)};
         clip-path: inset(-1% -1% 50% -1%);
         margin-bottom: -1px;
     }
@@ -54,10 +54,10 @@ export const TitleWrapper = styled.div`
         border-left: 1.875rem solid transparent;
         border-right: 1.875rem solid transparent;
         border-top: 1.875rem solid
-            ${props =>
-                props.theme.title === 'dark'
-                    ? props.theme.colors.primary
-                    : props.theme.colors.textColor};
+            ${(props) =>
+    (props.theme.title === 'dark'
+      ? props.theme.colors.primary
+      : props.theme.colors.textColor)};
         border-bottom: 1.875rem solid transparent;
         transform: rotate(-12deg);
         right: 62px;

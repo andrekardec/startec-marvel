@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Background } from ".";
+import { Background } from '.';
 
 export const Container = styled.div`
     grid-area: SR;
@@ -29,15 +29,18 @@ export const TextArea = styled.div`
 
     > h2 {
         padding-bottom: 18px;
-        color: ${props => props.theme.colors.primary};
+        color: ${(props) =>
+    props.theme.colors.primary};
     }
 
     > h1 {
         padding-bottom: 18px;
-        color: ${props => props.theme.colors.white};
+        color: ${(props) =>
+    props.theme.colors.white};
     }
     > p {
-        color: ${props => props.theme.colors.white};
+        color: ${(props) =>
+    props.theme.colors.white};
     }
 `;
 
@@ -46,7 +49,8 @@ export const ImageArea = styled.div<Background>`
     flex-direction: column;
     width: 40%;
     height: 343px;
-    background: url(${bg => bg.image}) no-repeat top center;
+    background: url(${(bg) =>
+    bg.image}) no-repeat top center;
     background-size: cover;
     box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.5);
 `;
@@ -59,5 +63,6 @@ export const Button = styled.button`
 
     font-size: 14px;
     color: var(--white);
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${(props) =>
+    props.theme.colors.primary};
 `;

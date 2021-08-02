@@ -1,8 +1,5 @@
 import {
-  IHttpClient,
   IHttpRequest,
-  IHttpResponse,
-  IHttpStatusCode,
 } from '@adapters/infrastructure/http/contracts/IHttpClient';
 
 import faker from 'faker';

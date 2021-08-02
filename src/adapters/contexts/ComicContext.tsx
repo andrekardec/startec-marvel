@@ -1,7 +1,8 @@
 import IComicDTO from '@domain/dto/IComicDTO';
+import { NotFound } from '@domain/types/INotFound';
 import { createContext } from 'use-context-selector';
 
-type ComicContextData = {
+export type ComicContextData = {
     loading: boolean;
     error: NotFound;
     comic: IComicDTO;

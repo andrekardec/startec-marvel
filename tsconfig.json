@@ -22,15 +22,26 @@
     "noImplicitAny": false,
     "checkJs": true,
     "baseUrl": "./src",
-    "types": ["@types/jest", "@types/node"],
+    "types": [
+      "@types/jest",
+      "@types/node"
+    ],
     "typeRoots": [
       "@types"
-    ],   
+    ],
     "paths": {
-      "@config/*": ["./config/*"],
-      "@adapters/*": ["./adapters/*"],
-      "@domain/*": ["./domain/*"],
-      "@presentation/*": ["./presentation/*"]
+      "@config/*": [
+        "./config/*"
+      ],
+      "@adapters/*": [
+        "./adapters/*"
+      ],
+      "@domain/*": [
+        "./domain/*"
+      ],
+      "@presentation/*": [
+        "./presentation/*"
+      ]
     }
   },
   "include": [
@@ -45,5 +56,5 @@
   ],
   "files": [
     "./src/presentation/styles/themes/styled-components.d.ts"
-    ]
+  ]
 }

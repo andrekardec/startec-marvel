@@ -1,4 +1,4 @@
-declare interface IImage {
+export interface IImage {
   path: string;
   extension: string;
 }

@@ -1,29 +1,35 @@
-import ListComicsUseCase from './ListComicsUseCase';
 import { AxiosHttpClient } from '@adapters/infrastructure/http/providers/Axios/AxiosHttpClient';
+import ListOneComicUseCase from './ListOneComicUseCase';
 
 let httpClient : AxiosHttpClient;
-let listComicsUseCase : ListComicsUseCase;
+let listOneComicUseCase : ListOneComicUseCase;
+
+const id = 93056;
+const nonExistingId = 515613135143513;
 
 beforeEach(() => {
   httpClient = new AxiosHttpClient();
-  listComicsUseCase = new ListComicsUseCase(httpClient);
+  listOneComicUseCase = new ListOneComicUseCase(httpClient);
 });
 
-test("Should fetch data with limit if amount is set", async () => {
-    const response = await listComicsUseCase.execute(12);
+test('Should return undefined if id doesn\'t exist', async () => {
+  const response = await listOneComicUseCase.execute(nonExistingId);
 
-    expect(response).not.toBeNull();
+  expect(response).toBeUndefined();
 });
 
-test("Should be able to return with no limit set", async () => {
-  const response = await listComicsUseCase.execute();
+test('Should be able to return comic if exists', async () => {
+  const response = await listOneComicUseCase.execute(id);
 
   expect(response).not.toBeNull();
 });
 
-test("Should return an array with more than one position", async () => {
-  const response = await listComicsUseCase.execute();
-  expect(response.length).toBeGreaterThan(1);
-  expect(response).not.toBeUndefined();
+test('Should return maximum two creators', async () => {
+  const response = await listOneComicUseCase.execute(id);
+  expect(response!.creators!.length).toBeLessThanOrEqual(2);
 });
 
+test('Should return just one result', async () => {
+  const response = await listOneComicUseCase.execute(id);
+  expect(response).not.toBe(Array);
+});
