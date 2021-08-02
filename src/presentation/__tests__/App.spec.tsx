@@ -1,6 +1,3 @@
-/**
- * @jest-environment jsdom
- */
 import App from '@presentation/App';
 import { render } from '@testing-library/react';
 

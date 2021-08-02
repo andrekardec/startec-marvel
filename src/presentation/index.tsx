@@ -1,6 +1,8 @@
-import 'core-js/stable';
+import 'reflect-metadata';
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import "@adapters/infrastructure/http/providers";
 
 import App from './App';
 
