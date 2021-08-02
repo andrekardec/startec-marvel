@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 // MB = MENU BAR
 // TB = TOP BAR
@@ -11,14 +11,16 @@ import styled from "styled-components";
 
 export const Grid = styled.div`
     display: grid;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    width: 100%;
 
-    grid-template-rows: auto auto auto auto auto 350px auto;
+    grid-template-rows: 55px 650px 350px 350px 110px;
+
 
     grid-template-areas:
         'TB'
-        'WL'
-        'CMC'
-        'BT'
+        'CMA'
         'SR'
         'CG'
         'FT';

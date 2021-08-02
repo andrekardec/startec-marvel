@@ -2,8 +2,8 @@ import md5 from 'md5';
 import { ICredentials } from './ICredentials';
 
 const API_MARVEL_BASE_URL = 'http://gateway.marvel.com/v1/public';
-const API_MARVEL_PRIVATE_KEY = '4fcff36cfecb40d3af9f98748ece221d707ead27';
-const API_MARVEL_PUBLIC_KEY = 'cad113a44c9ebdc720b50483736a90c5';
+const API_MARVEL_PRIVATE_KEY = '4bea677559e559132a6a1b595a9c4d3837050d32';
+const API_MARVEL_PUBLIC_KEY = 'd778de677bb9a639364bbfdf40379844';
 
 const TIMESTAMP = Number(new Date());
 

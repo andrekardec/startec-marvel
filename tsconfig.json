@@ -18,19 +18,17 @@
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "noImplicitAny": false,
     "checkJs": true,
-    "outDir": "./dist/",
     "baseUrl": "./src",
     "types": ["@types/jest", "@types/node"],
     "typeRoots": [
       "@types"
     ],   
     "paths": {
-      "@adapters/*": ["./adapters/*"],
       "@config/*": ["./config/*"],
+      "@adapters/*": ["./adapters/*"],
       "@domain/*": ["./domain/*"],
       "@presentation/*": ["./presentation/*"]
     }
@@ -43,7 +41,7 @@
     "node_modules",
     "build",
     "webpack.config.js",
-    "jest.config.ts"
+    "jest.config.js"
   ],
   "files": [
     "./src/presentation/styles/themes/styled-components.d.ts"

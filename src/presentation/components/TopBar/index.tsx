@@ -19,6 +19,7 @@ import { Link } from 'react-router-dom';
 const TopBar: React.FC = () => {
     return (
         <Container>
+            
             <LeftWrapper>
             <Link to="/"><HomeButton /></Link>
                 <ComicButton />

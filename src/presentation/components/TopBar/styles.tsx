@@ -8,13 +8,14 @@ import { Menu } from 'styled-icons/boxicons-regular';
 
 export const Container = styled.div`
     grid-area: TB;
-    display: grid;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
     max-height: 60px;
-
-    grid-template-columns: 40% 20% 40%;
-    grid-gap: 32px;
-    grid-template-areas: 'LEFT CENTER RIGHT';
-
+    width: 100vw;
     padding: 9px 0px;
 
     background-color: ${props => props.theme.colors.primary};
@@ -22,21 +23,22 @@ export const Container = styled.div`
 `;
 
 export const LeftWrapper = styled.div`
-    grid-area: LEFT;
     display: flex;
-    justify-content: space-between;
-
-    padding-right: 150px;
-    padding-left: 120px;
-    padding-top: 6px;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
 `;
 
 export const CenterWrapper = styled.div`
-    grid-area: CENTER;
     display: flex;
-    align-items: flex-start;
-    margin-top: 0px;
+    width: 30%;
     justify-content: center;
+`;
+
+export const RightWrapper = styled.div`
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
 `;
 
 export const LogoButton = styled.div`
@@ -53,6 +55,7 @@ export const LogoButton = styled.div`
     }
 `;
 export const HomeButton = styled(HomeSmile)`
+    display: flex;
     width: 25px;
     height: 25px;
 
@@ -68,6 +71,7 @@ export const HomeButton = styled(HomeSmile)`
     }
 `;
 export const ComicButton = styled(BookOpen)`
+    display: flex;
     width: 25px;
     height: 25px;
 
@@ -83,6 +87,7 @@ export const ComicButton = styled(BookOpen)`
     }
 `;
 export const CharacterButton = styled(PersonBooth)`
+    display: flex;
     width: 25px;
     height: 25px;
 
@@ -98,9 +103,9 @@ export const CharacterButton = styled(PersonBooth)`
     }
 `;
 export const SeriesButton = styled(MoviePlay)`
+    display: flex;
     width: 25px;
     height: 25px;
-    margin-bottom: 140px;
 
     color: ${props => props.theme.colors.white};
     opacity: 0.7;
@@ -112,15 +117,6 @@ export const SeriesButton = styled(MoviePlay)`
         opacity: 1;
         transform: scale(1.5);
     }
-`;
-
-export const RightWrapper = styled.div`
-    grid-area: RIGHT;
-    display: flex;
-    justify-content: space-between;
-
-    padding-right: 210px;
-    padding-top: 6px;
 `;
 
 export const HamburgerMenu = styled(Menu)`
