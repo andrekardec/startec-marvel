@@ -27,8 +27,8 @@
       "@types"
     ],   
     "paths": {
-      "@config/*": ["./config/*"],
       "@adapters/*": ["./adapters/*"],
+      "@config/*": ["./config/*"],
       "@domain/*": ["./domain/*"],
       "@presentation/*": ["./presentation/*"]
     }
