@@ -10,7 +10,7 @@ const WelcomeArea: React.FC = () => {
             </TitleWrapper>
             <ThanksBox>
                 <p>
-                    TO A MARVELOUS WORLD<span>:)</span>
+                    TO A MARVELOUS WORLD<span>:&#40;</span>
                 </p>
             </ThanksBox>
         </Container>

@@ -11,7 +11,7 @@ import {
     RightWrapper,
     HamburgerMenu,
 } from './styles';
-import ThemeSwitcher from '../ThemeSwitcher';
+import ThemeSwitcher from '@presentation/components/ThemeSwitcher';
 
 import LogoWhite from '@presentation/assets/logoWhite.svg';
 import { Link } from 'react-router-dom';
