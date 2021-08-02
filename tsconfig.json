@@ -18,9 +18,11 @@
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "noImplicitAny": false,
     "checkJs": true,
+    "outDir": "./dist/",
     "baseUrl": "./src",
     "types": ["@types/jest", "@types/node"],
     "typeRoots": [
@@ -41,6 +43,9 @@
     "node_modules",
     "build",
     "webpack.config.js",
-    "jest.config.js"
-  ]
+    "jest.config.ts"
+  ],
+  "files": [
+    "./src/presentation/styles/themes/styled-components.d.ts"
+    ]
 }

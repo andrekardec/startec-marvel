@@ -1,7 +1,3 @@
-/**
- * @jest-environment jsdom
- */
-
 import TopBar from '@presentation/components/TopBar';
 import { render } from '@testing-library/react'
 

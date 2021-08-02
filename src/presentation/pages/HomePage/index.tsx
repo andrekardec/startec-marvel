@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ComicsContextProvider } from "@presentation/providers/ComicsProvider";
+import { ComicsContextProvider } from "@adapters/contexts/providers/ComicsProvider";
 import { Grid } from "./styles";
 
 import TopBar from "@presentation/components/TopBar";
