@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, TitleWrapper, ThanksBox } from './styles';
+import { Container, TitleWrapper, ThanksBox, HappyIcon } from './styles';
 
 const WelcomeArea: React.FC = () => {
     return (
@@ -9,9 +9,8 @@ const WelcomeArea: React.FC = () => {
                 <h1>WELCOME</h1>
             </TitleWrapper>
             <ThanksBox>
-                <p>
-                    TO A MARVELOUS WORLD<span>:&#40;</span>
-                </p>
+                <p>TO A MARVELOUS WORLD</p>
+                <HappyIcon />
             </ThanksBox>
         </Container>
     );

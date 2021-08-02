@@ -3,6 +3,7 @@ import { Background } from ".";
 
 export const Container = styled.div`
     grid-area: SR;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +15,7 @@ export const BannerBox = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
 `;
 
 export const TextArea = styled.div`

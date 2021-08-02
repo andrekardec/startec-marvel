@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    grid-area: MC;
+    grid-area: CG;
     grid-gap: 16px;
     display: flex;
     align-items: center;
@@ -12,11 +12,7 @@ export const Container = styled.div`
 
 export const Box = styled.div`
     display: flex;
-    padding-top: 2%;
-    padding-bottom: 2%;
     grid-gap: 16px;
-    margin-right: auto;
-    margin-left: auto;
     height: auto;
     align-items: center;
     background-color: ${props => props.theme.colors.white};
