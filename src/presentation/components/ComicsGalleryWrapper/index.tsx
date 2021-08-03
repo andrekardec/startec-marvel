@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import { useComicsList } from '@presentation/hooks/useComicsList';
 import { Container } from './styles';
 import ComicsGalleryCard from '../ComicsGalleryCard';
+import Loading from '../Loading';
 
 const ComicsGalleryWrapper: React.FC = () => {
   const { listAllComics } = useComicsList();
   const comics = Array.from(listAllComics).slice(0, 12);
   return (
     <Container>
-      {comics.length <= 0 ? <div>Loading</div> : (
+      {comics.length <= 0 ? <Loading /> : (
         comics.map((comic) =>
           (
             <Link to={`/comics/${comic.id}`} key={comic.id}>

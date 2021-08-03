@@ -12,7 +12,7 @@ import {
   CenterWrapper,
   LogoButton,
   RightWrapper,
-  HamburgerMenu,
+  FacebookButton,
 } from './styles';
 
 const TopBar: React.FC = () =>
@@ -35,7 +35,7 @@ const TopBar: React.FC = () =>
 
       <RightWrapper>
         <ThemeSwitcher />
-        <HamburgerMenu />
+        <Link to="https://www.facebook.com/MarvelBR/"><FacebookButton /></Link>
       </RightWrapper>
     </Container>
   );

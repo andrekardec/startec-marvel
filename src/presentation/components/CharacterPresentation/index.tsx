@@ -1,6 +1,7 @@
 import { useCharacter } from '@presentation/hooks/useCharacter';
 import React from 'react';
 import ComicCard from '../ComicCard';
+import Loading from '../Loading';
 import {
   Container,
   ComicCardWrapper,
@@ -17,7 +18,7 @@ export interface Background {
 const CharacterPresentation: React.FC = () => {
   const { character, loading } = useCharacter();
   return (
-    loading ? <div>loading</div> : (
+    loading ? <Loading /> : (
       <Container image={`${character.thumbnail.path}.${character.thumbnail.extension}`}>
         <ComicCardWrapper>
           <ComicCard
