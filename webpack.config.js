@@ -53,6 +53,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(__dirname, "src/presentation/public", "index.html"),
+            favicon: "src/presentation/public/favicon.ico"
         }),
         new CleanWebpackPlugin(),
         new Dotenv()
