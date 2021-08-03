@@ -17,6 +17,7 @@ export const CharacterProvider: React.FC = ({ children }) => {
   const [error, setError] = useState<NotFound>({} as NotFound);
 
   const params = useParams<RouteParams>();
+  console.log(params);
   // eslint-disable-next-line radix
   const requestedCharacter = parseInt(Object.values(params)[0]);
 

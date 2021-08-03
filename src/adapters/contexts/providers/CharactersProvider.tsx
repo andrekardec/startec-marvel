@@ -11,14 +11,15 @@ export const CharactersProvider: React.FC = ({ children }) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [characters, setCharacter] = useState<ICharacterDTO[]>({} as ICharacterDTO[]);
 
-  useEffect(() => {
-    const listAllComics = container.resolve(ListCharactersUseCase);
+  const loadCharacters = container.resolve(ListCharactersUseCase);
 
-    const loadInitialData = async () => {
-      const comicsData = await listAllComics.execute();
-      setCharacter(comicsData);
-      setLoading(false);
-    };
+  const loadInitialData = async () => {
+    const charactersData = await loadCharacters.execute();
+    setCharacter(charactersData);
+    setLoading(false);
+  };
+
+  useEffect(() => {
     loadInitialData();
   }, []);
 

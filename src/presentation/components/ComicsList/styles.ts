@@ -29,7 +29,7 @@ export const ComicCarousel = styled.div`
         background-color: ${(props) =>
     props.theme.colors.primary};
         border-radius: 4px;
-        height: 6px;
+        height: 9px;
     }
 
     ::-webkit-scrollbar-track {

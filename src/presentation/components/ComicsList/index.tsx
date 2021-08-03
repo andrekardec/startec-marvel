@@ -13,7 +13,7 @@ const ComicsList: React.FC = () => {
       <ComicCarousel>
         {comics.map((card) =>
           (
-            <Link to={`/comic/${card.id}`} key={card.id}>
+            <Link to={`/comics/${card.id}`} key={card.id}>
               <ComicCard
                 key={card.id}
                 title={card.title}

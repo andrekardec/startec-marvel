@@ -1,5 +1,8 @@
 import IRoute from '@adapters/infrastructure/http/contracts/IRoute';
+import CharacterPage from '@presentation/pages/CharacterPage';
+import CharactersPage from '@presentation/pages/CharactersPage';
 import ComicPage from '@presentation/pages/ComicPage';
+import ComicsPage from '@presentation/pages/ComicsPage';
 import HomePage from '@presentation/pages/HomePage';
 
 const appRoutes: IRoute[] = [
@@ -10,7 +13,13 @@ const appRoutes: IRoute[] = [
     exact: true,
   },
   {
-    path: '/comic/:id',
+    path: '/comics',
+    name: 'show.comics',
+    component: ComicsPage,
+    exact: true,
+  },
+  {
+    path: '/comics/:id',
     name: 'show.comic',
     component: ComicPage,
     exact: true,
@@ -18,13 +27,13 @@ const appRoutes: IRoute[] = [
   {
     path: '/characters',
     name: 'show.characters',
-    component: ComicPage,
+    component: CharactersPage,
     exact: true,
   },
   {
     path: '/characters/:id',
     name: 'show.character',
-    component: ComicPage,
+    component: CharacterPage,
     exact: true,
   },
 ];

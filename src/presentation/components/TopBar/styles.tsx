@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 import {
-  HomeSmile, BookOpen, MoviePlay, Menu,
+  HomeSmile, BookOpen, MoviePlay,
 } from 'styled-icons/boxicons-regular';
+import { Facebook } from 'styled-icons/bootstrap';
 
 import { PersonBooth } from 'styled-icons/fa-solid';
 
@@ -125,9 +126,9 @@ export const SeriesButton = styled(MoviePlay)`
     }
 `;
 
-export const HamburgerMenu = styled(Menu)`
-    width: 40px;
-    height: 40px;
+export const FacebookButton = styled(Facebook)`
+    width: 35px;
+    height: 35px;
     margin-right: 40px;
     margin-top: -7px;
 
@@ -138,6 +139,6 @@ export const HamburgerMenu = styled(Menu)`
     transition: transform 0.2s;
 
     &:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
     }
 `;

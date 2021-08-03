@@ -9,11 +9,10 @@ import {
   HomeButton,
   ComicButton,
   CharacterButton,
-  SeriesButton,
   CenterWrapper,
   LogoButton,
   RightWrapper,
-  HamburgerMenu,
+  FacebookButton,
 } from './styles';
 
 const TopBar: React.FC = () =>
@@ -22,9 +21,8 @@ const TopBar: React.FC = () =>
 
       <LeftWrapper>
         <Link to="/"><HomeButton /></Link>
-        <ComicButton />
-        <CharacterButton />
-        <SeriesButton />
+        <Link to="/comics"><ComicButton /></Link>
+        <Link to="/characters"><CharacterButton /></Link>
       </LeftWrapper>
 
       <CenterWrapper>
@@ -37,7 +35,7 @@ const TopBar: React.FC = () =>
 
       <RightWrapper>
         <ThemeSwitcher />
-        <HamburgerMenu />
+        <Link to="https://www.facebook.com/MarvelBR/"><FacebookButton /></Link>
       </RightWrapper>
     </Container>
   );
