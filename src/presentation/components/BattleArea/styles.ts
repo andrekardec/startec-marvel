@@ -102,8 +102,8 @@ export const CounterBattle = styled.div`
     cursor: pointer;
     color: ${(props) =>
     props.theme.colors.textColor};
-    font-size: 70px;
+    font-size: 30px;
     font-weight: 900;
-    letter-spacing: 10px;
+    letter-spacing: 1px;
     
 `;

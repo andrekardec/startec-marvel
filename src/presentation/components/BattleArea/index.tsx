@@ -1,3 +1,4 @@
+import { useInitialData } from '@presentation/hooks/useInitialData';
 import React from 'react';
 import ComicCard from '../ComicCard';
 import VoteButton from '../VoteButton';
@@ -5,8 +6,12 @@ import {
   Container, BattleAreaWrapper, ComicAreaWrapper, BattleTitleWrapper, ComicWrapper, CounterBattle, TitleWrapper, CallToAction,
 } from './styles';
 
-const BattleArea: React.FC = () =>
-  (
+const BattleArea: React.FC = () => {
+  const {
+    voteA, voteB, handleVoteA, handleVoteB,
+  } = useInitialData();
+
+  return (
     <Container>
       <BattleAreaWrapper>
         <BattleTitleWrapper>
@@ -17,14 +22,14 @@ const BattleArea: React.FC = () =>
           <CallToAction>
             <p>
               Which one deserves to win?
-              <span>:) #Vote</span>
+              <span>#Vote</span>
             </p>
           </CallToAction>
         </BattleTitleWrapper>
       </BattleAreaWrapper>
       <ComicAreaWrapper>
         <ComicWrapper>
-          <VoteButton />
+          <VoteButton onClick={handleVoteA} />
           <ComicCard
             image="http://i.annihil.us/u/prod/marvel/i/mg/6/d0/60fad3864b875.jpg"
             title="Lorem Ipsum"
@@ -32,11 +37,13 @@ const BattleArea: React.FC = () =>
         </ComicWrapper>
 
         <CounterBattle>
-          4x2
+          {voteA}
+          x
+          {voteB}
         </CounterBattle>
 
         <ComicWrapper>
-          <VoteButton />
+          <VoteButton onClick={handleVoteB} />
           <ComicCard
             image="http://i.annihil.us/u/prod/marvel/i/mg/6/c0/60f73849ef12b.jpg"
             title="Lorem Ipsum"
@@ -45,5 +52,5 @@ const BattleArea: React.FC = () =>
       </ComicAreaWrapper>
     </Container>
   );
-
+};
 export default BattleArea;

@@ -14,7 +14,7 @@ const ComicGallery: React.FC = () => {
         <Box>
           {comics.map((comic) =>
             (
-              <Link to={`/comics/${comic.id}`} key={comic.id}>
+              <Link to={`/comics/${comic.id}`}>
                 <ComicCard
                   key={comic.id}
                   title={comic.title}

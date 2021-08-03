@@ -5,9 +5,12 @@ export interface Background {
     image: string;
   }
 
-const VoteButton: React.FC = () =>
+type Props = {
+  onClick(): void;
+};
+const VoteButton: React.FC<Props> = ({ onClick }) =>
   (
-    <Button>
+    <Button onClick={onClick}>
       <Icon />
     </Button>
   );

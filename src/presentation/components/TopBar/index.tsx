@@ -35,7 +35,7 @@ const TopBar: React.FC = () =>
 
       <RightWrapper>
         <ThemeSwitcher />
-        <Link to="https://www.facebook.com/MarvelBR/"><FacebookButton /></Link>
+        <a href="https://www.facebook.com/MarvelBR/" target="_blank" rel="noreferrer"><FacebookButton /></a>
       </RightWrapper>
     </Container>
   );

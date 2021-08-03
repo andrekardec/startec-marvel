@@ -15,14 +15,13 @@ export const Grid = styled.div`
     flex-shrink: 0;
     width: 100%;
 
-    grid-template-rows: 55px 650px 350px 350px 110px;
+    grid-template-rows: 55px 650px 350px 110px;
 
 
     grid-template-areas:
         'TB'
         'CMA'
         'SR'
-        'CG'
         'FT';
     width: 100%;
 `;

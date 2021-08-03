@@ -1,6 +1,7 @@
 import useListComicWithLimit from '@presentation/hooks/useListComicWithLimit';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Loading from '../Loading';
 import {
   Container, BannerBox, TextArea, ImageArea, Button,
 } from './styles';
@@ -12,7 +13,7 @@ export interface Background {
 const ComicFeatured: React.FC = () => {
   const { comics } = useListComicWithLimit(1);
   return (
-    comics.length <= 0 ? <div>Loading</div> : (
+    comics.length <= 0 ? <Loading /> : (
       <Container>
         <BannerBox>
           <ImageArea image="http://x.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73/landscape_xlarge.jpg" />
