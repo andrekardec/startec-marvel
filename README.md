@@ -40,6 +40,9 @@ Marvel React App
 - [x] Webpack
 - [x] Babel
 
+## GIT WORKFLOW
+
+- [x] GitFlow
 ## Main Design Patterns
 
 - [x] Dependency Inversion Principle
