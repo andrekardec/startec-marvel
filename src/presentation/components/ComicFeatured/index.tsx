@@ -20,7 +20,7 @@ const ComicFeatured: React.FC = () => {
             <h2> MARVEL SERIE </h2>
             <p>To binge read</p>
             <h1>{comics[0].title}</h1>
-            <Link to={`/comic/${comics[0].id}`} key={comics[0].id}><Button>See More</Button></Link>
+            <Link to={`/comics/${comics[0].id}`} key={comics[0].id}><Button>See More</Button></Link>
           </TextArea>
         </BannerBox>
       </Container>

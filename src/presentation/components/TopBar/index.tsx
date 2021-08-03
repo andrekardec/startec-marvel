@@ -9,7 +9,6 @@ import {
   HomeButton,
   ComicButton,
   CharacterButton,
-  SeriesButton,
   CenterWrapper,
   LogoButton,
   RightWrapper,
@@ -22,9 +21,8 @@ const TopBar: React.FC = () =>
 
       <LeftWrapper>
         <Link to="/"><HomeButton /></Link>
-        <ComicButton />
-        <CharacterButton />
-        <SeriesButton />
+        <Link to="/comics"><ComicButton /></Link>
+        <Link to="/characters"><CharacterButton /></Link>
       </LeftWrapper>
 
       <CenterWrapper>

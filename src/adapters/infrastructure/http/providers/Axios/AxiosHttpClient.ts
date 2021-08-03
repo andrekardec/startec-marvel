@@ -12,10 +12,13 @@ export class AxiosHttpClient implements IHttpClient {
 
   async request(options: IHttpRequest): Promise<AxiosResponse> {
     let axiosResponse: AxiosResponse;
-    if (options.params) {
+
+    if (options.params && options.url.includes('/comics')) {
       this.marvelParams = `?${options.params}&dateDescriptor=lastWeek&`;
-    } else {
+    } else if (options.url.includes('/comics')) {
       this.marvelParams = '?dateDescriptor=thisWeek&';
+    } else {
+      this.marvelParams = '?';
     }
 
     if (options.data) {

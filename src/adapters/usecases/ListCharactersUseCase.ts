@@ -21,6 +21,7 @@ class ListCharactersUseCase implements IListCharactersUseCase {
       url: '/characters',
       method: 'GET',
     });
+
     this.characters = data.data.results.map(
       ({
         id, name, description, thumbnail, modified,

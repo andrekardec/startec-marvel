@@ -8,6 +8,8 @@ export const Container = styled.div`
     margin-top: -3px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    width: 100vw;
 `;
 export const DevelopedBy = styled.div`
     display: flex;

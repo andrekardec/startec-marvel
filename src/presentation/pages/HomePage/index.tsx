@@ -1,16 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import { ComicsContextProvider } from "@adapters/contexts/providers/ComicsProvider";
-import { Grid } from "./styles";
+import { ComicsContextProvider } from '@adapters/contexts/providers/ComicsProvider';
 
-import TopBar from "@presentation/components/TopBar";
-import WelcomeArea from "@presentation/components/WelcomeArea";
-import ComicsList from "@presentation/components/ComicsList";
-import BattleArea from "@presentation/components/BattleArea";
+import TopBar from '@presentation/components/TopBar';
+import WelcomeArea from '@presentation/components/WelcomeArea';
+import ComicsList from '@presentation/components/ComicsList';
+import BattleArea from '@presentation/components/BattleArea';
 import ComicFeatured from '@presentation/components/ComicFeatured';
 import ComicsGallery from '@presentation/components/ComicsGallery';
-import Footer from "@presentation/components/Footer";
-
+import Footer from '@presentation/components/Footer';
+import { Grid } from './styles';
 
 const HomePage: React.FC = () =>
   (
